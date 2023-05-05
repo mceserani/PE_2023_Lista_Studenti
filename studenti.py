@@ -59,11 +59,12 @@ def main():
             # SCRIVI QUI IL TUO CODICE
             pass
         elif scelta == "5":
-            # SCRIVI QUI IL TUO CODICE
-            pass
+            # Save studenti to JSON file studenti.json
+            with open("studenti.json","w",encoding="utf-8") as f_json:
+                json.dump(studenti, f_json)
+            break
         else:
-            # SCRIVI QUI IL TUO CODICE
-            pass
+            print("Scelta non valida")
 
 
 if __name__ == "__main__":
